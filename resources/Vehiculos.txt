@@ -1,0 +1,44 @@
+Vehículos e intenciones
+¿Que tengo que saber?
+	Quien, donde e intenciones
+	si es ocupación, ¿cuanto tiempo estima?
+
+7:00 Balizamiento 6,7,11
+	Revisión pistas con conos (aprox 10-15 min por pista)
+
+8:00 Control de Fauna 
+	CF - Torre de control de fauna, permiso para cruzar punto de espera pista 21L puerta K y S8
+	ATC - Control de Fauna, cruce punto de espera pista 21L puerta K y S8, notifique libre
+	CF - Cruzamos punto de espera 21L puerta K y S8, notificamos libre, control de fauna
+	...
+	CF - Torre, punto de espera pista 21L puerta K y S8 libre de control de fauna y permiso para cruzar punto de espera pista 03R
+	ATC - Control de Fauna, cruce punto de espera pista 03R notifique libre
+	CF - Cruzamos punto de espera pista 03R
+	...
+	CF - Torre, punto de espera pista 03R libre
+	ATC - Control de Fauna, punto de espera pista 03R libre
+
+8:30 Limpieza exterior
+	a la altura del P04 permiso cruzar rodadura exterior para trabajos en el parterre entre S3 y S2
+	permiso cruzar S1/S2
+	permiso cruzar R3 para abandonar el parterre
+
+Hx 	prueba de radio
+	prueba de aceleración R1-puerta G
+	prueba tiempo respuesta con/sin descarga con/sin recarga
+
+Vx/OPx 	en puerta G para revisión de pista (3-8 min por pista)
+(señaleros)	podemos proceder al Tx por F con el tráfico en S2?
+
+Barrera, permiso a cruzar S8
+	 solicita prueba funcional cable 03R
+	 permiso cruzar S8 y puerta K (y punto de espera 21L)
+
+Señalero militar
+
+Barredora (tiempo ocupación)
+
+IMx, Radioayudas, Mantenimiento Base, Meteo, Ferrovial, Obra civil, EM ...
+	permiso cruzar Z7 y Z6 / S5 y S6 / S7
+
+Señalero con vehículo lento para cruzar pistas
