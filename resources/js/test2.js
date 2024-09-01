@@ -89,10 +89,10 @@ vehicles.push(new Vehicle("v4","vx.png",135,25,
   
   ),
   new Array(
-    "Torre de Víctor 4, permiso para ocupar romeo 8 y romeo 9 para revisión de pista",
-    "Víctor 4, manteniendo corto pista cero tres izquierda en romeo 9 romeo",
-    "Víctor 4, ocupando pista cero tres izquierda, notificaré libre y operativa",
-    "Torre de víctor 4, pista cero tres izquierda libre y operativa"
+    "Torre de Victor 4, permiso para ocupar romeo 8 y romeo 9 para revisión de pista",
+    "Victor 4, manteniendo corto pista cero tres izquierda en romeo 9 romeo",
+    "Victor 4, ocupando pista cero tres izquierda, notificare libre y operativa",
+    "Torre de victor 4, pista cero tres izquierda libre y operativa"
   )
 ));
 
