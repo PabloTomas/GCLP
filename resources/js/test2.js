@@ -261,7 +261,5 @@ function play(){
 }
 
 window.addEventListener('load', function () {
-  alert("It's loaded!");
   play();
 })
-//window.onload = play;
