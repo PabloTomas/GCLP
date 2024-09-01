@@ -260,4 +260,8 @@ function play(){
   
 }
 
-window.onload = play;
+window.addEventListener('load', function () {
+  alert("It's loaded!");
+  play();
+})
+//window.onload = play;
