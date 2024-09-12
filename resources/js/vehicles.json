@@ -1,0 +1,204 @@
+{"vehicles":[
+    {"name":"cf",
+    "picture":"cf.png",
+    "w":80,
+    "h":50,
+    "x":98,
+    "y":283,
+
+        "actions":[
+            {"type":"speak",
+                "speak":"Torre de control de fauna, permiso para cruzar punto de espera pista dos uno izquierda, puerta quilo y sierra 8",
+                "text":"Torre de control de fauna, permiso para cruzar punto de espera pista 21L, puerta K y S8"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Cruzando, notificaré libre",
+                "text":"Cruzando, notificaré libre"
+            },
+            {"type":"move","x":950,"y":283},
+            {"type":"speak",
+                "speak":"Torre de control de fauna, punto de espera pista dos uno izquierda puerta kilo y sierra ocho libre",
+                "text":"Torre de control de fauna, punto de espera pista 21L puerta K y S8 libre"
+            },
+            {"type":"move","x":1640,"y":283},
+            {"type":"speak",
+                "speak":"Torre de control de fauna, permiso para cruzar punto de espera pista cero tres derecha",
+                "text":"Torre de control de fauna, permiso para cruzar punto de espera pista 03R"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Cruzando punto de espera pista cero tres derecha, notificaré libre",
+                "text":"Cruzando punto de espera pista 03R, notificaré libre"
+            },
+            {"type":"move","x":1740,"y":283},
+            {"type":"speak",
+                "speak":"punto de espera pista cero tres derecha libre, terminado por hoy, buen dia y buen servicio",
+                "text":"punto de espera pista 03R libre, terminado por hoy, buen día y buen servicio"
+            },
+            {"type":"wait"}
+        ]
+    },
+    {
+        "name":"op7",
+        "picture":"op7.png",
+        "w":80,
+        "h":50,
+        "x":1785,
+        "y":360,
+        "actions":[
+            {"type":"speak",
+                "speak":"Torre de oscar papa siete, permiso para cruzar zulu siete y zulu seis",
+                "text":"Torre de OP7, permiso para cruzar Z7 y Z6"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Cruzando, notificaré libre",
+                "text":"Cruzando, notificaré libre"
+            },
+            {"type":"move","x":1600,"y":360},
+            {"type":"speak",
+            "speak":"zulu siete y zulu seis libre de oscar papa siete",
+            "text":"Z7 y Z6 libre de OP7"
+            },
+            {"type":"wait"}
+        ]
+    },
+    {
+        "name":"v3",
+        "picture":"vr.png",
+        "w":80,
+        "h":50,
+        "x":98,
+        "y":353,
+        "actions":[
+            {"type":"speak",
+                "speak":"Torre de victor 3, permiso para cruzar sierra 7",
+                "text":"Torre de V3, permiso para cruzar S7"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Cruzando, notificare libre",
+                "text":"Cruzando, notificare libre"
+            },
+            {"type":"move","x":400,"y":353},
+            {"type":"speak",
+                "speak":"sierra 7 libre de victor 3",
+                "text":"sierra 7 libre de V3"
+            },
+            {"type":"wait"}
+        ]
+    },
+    {
+        "name":"h2",
+        "picture":"hxl.png",
+        "w":100,
+        "h":30,
+        "x":1480,
+        "y":530,
+        "actions":[
+            {"type":"speak",
+                "speak":"Torre de Hotel 2, permiso para rodar desde parque de bomberos hasta romeo 9 lima",
+                "text":"Torre de H2, permiso para rodar desde parque de bomberos hasta R9L"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Hotel 2 Ocupando rodadura exterior",
+                "text":"H2 Ocupando rodadura exterior"
+            },
+            {"type":"move","x":180,"y":530},
+            {"type":"speak",
+                "speak":"Torre de Hotel 2, rodadura exterior libre",
+                "text":"Torre de H2, rodadura exterior libre"
+            },
+            {"type":"wait"}
+        ]
+    },
+    {
+        "name":"sm",
+        "picture":"vr.png",
+        "w":80,
+        "h":50,
+        "x":480,
+        "y":260,
+        "actions":[
+            {"type":"speak",
+                "speak":"Torre de Barrera, permiso para cruzar sierra 8",
+                "text":"Torre de Barrera, permiso para cruzar S8"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Barrera, cruzando sierra 8 notificaré libre",
+                "text":"Barrera, cruzando S8 notificaré libre"
+            },
+            {"type":"move","x":750,"y":260},
+            {"type":"move","x":830,"y":285},
+            {"type":"move","x":1400,"y":285},
+            {"type":"speak",
+                "speak":"Torre de Barrera, sierra 8 libre y solicito levantamiento de cable retráctil",
+                "text":"Torre de Barrera, S8 libre y  solicito levantamiento de cable retráctil"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Torre de Barrera, Cable arriba, puede bajarlo",
+                "text":"Torre de Barrera, Cable arriba, puede bajarlo"
+            },
+            {"type":"wait","time":2},
+            {"type":"speak",
+                "speak":"Torre de Barrera, le confirmo cable abajo y le solicito cruzar sierra 8",
+                "text":"Torre de Barrera, le confirmo cable abajo y le solicito cruzar S8"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Barrera, cruzando sierra 8 notificaré libre",
+                "text":"Barrera, cruzando S8 notificaré libre"
+            },
+            {"type":"move","x":556,"y":285},
+            {"type":"speak",
+                "speak":"Torre de Barrera, sierra 8 libre, terminado, muchas gracias",
+                "text":"Torre de Barrera, S8 libre, terminado, muchas gracias"
+            },
+            {"type":"wait"}
+        ]
+    },
+    {
+        "name":"v4",
+        "picture":"vx.png",
+        "w":135,
+        "h":25,
+        "x":495,
+        "y":520,
+        "actions":[
+            {"type":"speak",
+                "speak":"Torre de Víctor 4, permiso para ocupar romeo 8 y romeo 9 para revisión de pista",
+                "text":"Torre de V4, permiso para ocupar R8 y R9 para revisión de pista"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Recibido, ocupando romeo 8 y 9",
+                "text":"Recibido, ocupando R8 y 9"
+            },
+            {"type":"move","x":276,"y":520},
+            {"type":"move","x":222,"y":491},
+            {"type":"speak",
+                "speak":"Víctor 4, manteniendo corto pista cero tres izquierda en romeo 9 romeo",
+                "text":"V4, manteniendo corto pista 03L en R9R"
+            },
+            {"type":"wait"},
+            {"type":"speak",
+                "speak":"Víctor 4, ocupando pista cero tres izquierda, notificare libre y operativa",
+                "text":"V4, ocupando pista 03L, notificare libre y operativa"
+            },
+            {"type":"move","x":167,"y":430},
+            {"type":"move","x":1684,"y":430},
+            {"type":"move","x":1671,"y":478},
+            {"type":"move","x":1570,"y":529},
+            {"type":"speak",
+                "speak":"Torre de víctor 4, pista cero tres izquierda libre y operativa",
+                "text":"Torre de V4, pista 03L libre y operativa"
+            },
+            {"type":"move","x":495,"y":520},
+            {"type":"wait","time":1}
+        ]
+    }
+]}

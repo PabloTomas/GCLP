@@ -5,23 +5,20 @@ class Vehicle {
         this.picture=picture;
         this.w=w;
         this.h=h;
-        this.x=segments[0].x;
-        this.y=segments[0].y;
-        // this.x=x;
-        // this.y=y;
-        // this.finalx=finalx;
-        // this.finaly=finaly;
+
         if (this.finaly==null){
             this.finaly=this.y;
         }
-        this.currentSegment=0;
-        this.segments=segments;
+        //this.currentSegment=0;
+        //this.segments=segments;
         this.moving=false;
         this.text=text;
-        this.currentSegmentFlip=1;
-        this.currentSegmentRotation=0;
+        //this.currentSegmentFlip=1;
+        //this.currentSegmentRotation=0;
+        this.actions=[];
     }
-
+    actions;
+    currentAction;
     name;
     picture;
     w=80;
@@ -32,20 +29,35 @@ class Vehicle {
     finalx;
     finaly;
     moving;
-
+    button;
+/*
     currentSegment;
     segments;
 
     currentSegmentRotation;
     currentSegmentRotationId;
+    */
     currentSegmentFlip;
     currentSegmentFlipId;
-
+    
+    geNextMoveAction(){
+        var nextX;
+            let actionId = this.currentAction;
+            while (actionId<this.actions.length && nextX == null){
+                nextX=this.actions[actionId].x;
+                actionId++;
+            }
+        return nextX;
+    }
     getDirection(){
         var flip = this.currentSegmentFlip;
-        if (this.currentSegment!=this.currentSegmentFlipId){
-            if (this.currentSegment+2<this.segments.length){
-                var deltaX = this.segments[this.currentSegment+1].x - this.segments[this.currentSegment].x;//x2 - x1;
+        try{
+        if (this.currentAction>=0 &&
+            this.actions[this.currentAction].type == "move" &&
+            this.currentAction!=this.currentSegmentFlipId){
+            if (this.currentAction<this.actions.length){
+               // var deltaX = this.segments[this.currentSegment+1].x - this.segments[this.currentSegment].x;//x2 - x1;
+               var deltaX = this.geNextMoveAction()-this.x  ;//x2 - x1;
                 if (deltaX>=0){
                     flip=1;
                 }
@@ -54,10 +66,16 @@ class Vehicle {
                 }
             }
             this.currentSegmentFlip = flip;
-            this.currentSegmentFlipId=this.currentSegment;
+            this.currentSegmentFlipId=this.currentAction;
+            console.log("dirección:" + flip);
         }
+    }
+        catch(e){
+            console.log(e)
+        };
         return flip;
     };
+    /*
     getRotation(){
                 
         if (this.currentSegment!=this.currentSegmentRotationId){
@@ -72,9 +90,18 @@ class Vehicle {
         }
         return this.currentSegmentRotation;
     }
+        ç*/
 }
 
-class Segment{
+class Action{
+    type;
+    speak;
+    text;
+    x;
+    y;
+    time;
+}
+/*class Segment{
     constructor(x,y,stop=null){
         this.x=x;
         this.y=y;
@@ -82,8 +109,8 @@ class Segment{
     }
     x;
     y;
-}
-
+}*/
+/*
 class Point {
     constructor(x,y){
         this.x=x;
@@ -91,8 +118,8 @@ class Point {
     }
     x;
     y;
-}
-
+}*/
+/*
 class Path {
     finalx;
     finaly;
@@ -100,4 +127,4 @@ class Path {
     text;
     speech;
 
-}
+}*/

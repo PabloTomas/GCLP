@@ -3,103 +3,85 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-        <style>
-            .card{
-                text-align: center;
-                display:inline;
-                float:left;
-                margin-right: 5px;
-                background: rgba(250,250,255,0.7);
-            }
-            body{
-                background-color: black;
-                text-align: center;
-                
-            }
-            #container{
-                position: relative;
-                top:-70px;                
-            }
-            .card{
-                width: 9rem;
-            }
-            #canvas{
-                width: 100%;
-            }
-        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         <canvas id="canvas" width="1917" height="804"></canvas>
-        <img src="resources/img/plano3.png" id="planoGCLP" style="display:none;">
-        <img src="resources/img/cf.png" id="cf" style="display:none;">
-        <img src="resources/img/vr.png" id="sm" style="display:none;">
-        <img src="resources/img/op7.png" id="op7" style="display:none;">
-        <img src="resources/img/vx.png" id="v3" style="display:none;">
-        <img src="resources/img/vx.png" id="v4" style="display:none;">
-        <img src="resources/img/HxL.png" id="h2" style="display:none;">
+        <div id="preloadedImages">
+            <img src="resources/img/plano3.png" id="planoGCLP" style="display:none;">
+            <!--<img src="resources/img/cf.png" id="cf" style="display:none;">
+            <img src="resources/img/vr.png" id="sm" style="display:none;">
+            <img src="resources/img/op7.png" id="op7" style="display:none;">
+            <img src="resources/img/vx.png" id="v3" style="display:none;">
+            <img src="resources/img/vx.png" id="v4" style="display:none;">
+            <img src="resources/img/HxL.png" id="h2" style="display:none;">-->
+        </div>
         <br/>
         <div id="container" class="container-fluid mx-2 d-flex justify-content-center">
             <div  class="card">
-                <div>Control de Fauna:</div>
-                <button onclick="javascript:vehicleAction('cf', 'speak')" class="btn btn-outline-primary fs-5 py-0 px-1">
-                    <i class="bi bi-volume-down"></i>
-                </button>
-                <button onclick="javascript:vehicleAction('cf', 'move')" class="btn btn-outline-primary fs-5 py-0 px-1">
+                <div>Fauna:</div>
+                <button onclick="javascript:vehicleAction('cf', 'move', this)" class="btn btn-outline-primary fs-5 py-0 px-1">
                     <i class="bi bi-play"></i>
                 </button>
+                <div class="spinner-grow spinner-grow-sm text-primary d-none" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
             <div class="card">
                 <div>OP7:</div>
-                <button onclick="javascript:vehicleAction('op7', 'speak')" class="btn btn-outline-primary fs-5 py-0 px-1">
-                    <i class="bi bi-volume-down"></i>
-                </button>
-                <button onclick="javascript:vehicleAction('op7', 'move')" class="btn btn-outline-primary fs-5 py-0 px-1">
+                <button onclick="javascript:vehicleAction('op7', 'move', this)" class="btn btn-outline-primary fs-5 py-0 px-1">
                     <i class="bi bi-play"></i>
                 </button>
+                <div class="spinner-grow spinner-grow-sm text-primary d-none" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
             <div class="card">
                 <div>Barrera:</div>
-                <button onclick="javascript:vehicleAction('sm', 'speak')" class="btn btn-outline-primary fs-5 py-0 px-1">
-                    <i class="bi bi-volume-down"></i>
-                </button>
-                <button onclick="javascript:vehicleAction('sm', 'move')" class="btn btn-outline-primary fs-5 py-0 px-1">
+                <button  onclick="javascript:vehicleAction('sm', 'move', this)" class="btn btn-outline-primary fs-5 py-0 px-1">
                     <i class="bi bi-play"></i>
                 </button>
+                <div class="spinner-grow spinner-grow-sm text-primary d-none" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
             <div class="card">
                 <div>V3:</div>
-                <button onclick="javascript:vehicleAction('v3', 'speak')" class="btn btn-outline-primary fs-5 py-0 px-1">
-                    <i class="bi bi-volume-down"></i>
-                </button>
-                <button onclick="javascript:vehicleAction('v3', 'move')" class="btn btn-outline-primary fs-5 py-0 px-1">
+                <button onclick="javascript:vehicleAction('v3', 'move', this)" class="btn btn-outline-primary fs-5 py-0 px-1">
                     <i class="bi bi-play"></i>
                 </button>
+                <div class="spinner-grow spinner-grow-sm text-primary d-none" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
             <div class="card">
                 <div>V4:</div>
-                <button onclick="javascript:vehicleAction('v4', 'speak')" class="btn btn-outline-primary fs-5 py-0 px-1">
-                    <i class="bi bi-volume-down"></i>
-                </button>
-                <button onclick="javascript:vehicleAction('v4', 'move')" class="btn btn-outline-primary fs-5 py-0 px-1">
+                <button  onclick="javascript:vehicleAction('v4', 'move', this)" class="btn btn-outline-primary fs-5 py-0 px-1">
                     <i class="bi bi-play"></i>
                 </button>
+                <div class="spinner-grow spinner-grow-sm text-primary d-none" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
             <div class="card">
                 <div>H2:</div>
-                <button onclick="javascript:vehicleAction('h2', 'speak')" class="btn btn-outline-primary fs-5 py-0 px-1">
-                    <i class="bi bi-volume-down"></i>
-                </button>
-                <button onclick="javascript:vehicleAction('h2', 'move')" class="btn btn-outline-primary fs-5 py-0 px-1">
+                <button  onclick="javascript:vehicleAction('h2', 'move', this)" class="btn btn-outline-primary fs-5 py-0 px-1">
                     <i class="bi bi-play"></i>
                 </button>
+                <div class="spinner-grow spinner-grow-sm text-primary d-none" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
         </div>
     </body>
     <script src="resources/js/vehicle.js" language="javascript"></script>
-    <script src="resources/js/test2.js" language="javascript"></script>
+    <script src="resources/js/utils.js" language="javascript"></script>
+    <script src="resources/js/speak.js" language="javascript"></script>
+    <script  src="resources/js/loadvehicles.js"></script>
+    <script src="resources/js/index.js" language="javascript"></script>
     </html>
 
 

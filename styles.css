@@ -1,0 +1,22 @@
+.card{
+    text-align: center;
+    display:inline;
+    float:left;
+    margin-right: 5px;
+    background: rgba(250,250,255,0.7);
+}
+body{
+    background-color: black;
+    text-align: center;
+    
+}
+#container{
+    position: relative;
+    top:-70px;                
+}
+.card{
+    width: 9rem;
+}
+#canvas{
+    width: 100%;
+}
