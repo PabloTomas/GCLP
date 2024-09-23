@@ -73,6 +73,7 @@ const runSequence = async function(v){
             toggleButton(v.button, "show")
             break;
           case "speak":
+              typeWriter(action.text, 0, v.name.toUpperCase());
               await speak2(v,action);
               runSequence(v);
               //toggleButton(v.button, "hide")
