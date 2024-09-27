@@ -1,10 +1,7 @@
 
 function loadVehicles(vehicles){
     //var vehicles = new Array();
-    $.ajaxSetup({
-        async: false
-    });
-    $.getJSON("./resources/js/vehicles.json", function(json) {
+    return $.getJSON("./resources/js/vehicles.json", function(json) {
         var vs = json.vehicles;
 
         vs.forEach(v => {
@@ -19,12 +16,12 @@ function loadVehicles(vehicles){
             vehicles.push(vehicle);
             //console.log(v);
         });
+        loadVehiclesToDOM(vehicles);
         //console.log(vs); // this will show the info it in firebug console
     });
-    $.ajaxSetup({
-        async: true
-    });
-    loadVehiclesToDOM(vehicles);
+
+    
+    //return true;
 }
 
 

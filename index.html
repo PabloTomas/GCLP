@@ -12,15 +12,19 @@
         <canvas id="canvas" width="1917" height="804"></canvas>
         <div id="preloadedImages">
             <img src="resources/img/plano3.png" id="planoGCLP" style="display:none;">
-            <!--<img src="resources/img/cf.png" id="cf" style="display:none;">
-            <img src="resources/img/vr.png" id="sm" style="display:none;">
-            <img src="resources/img/op7.png" id="op7" style="display:none;">
-            <img src="resources/img/vx.png" id="v3" style="display:none;">
-            <img src="resources/img/vx.png" id="v4" style="display:none;">
-            <img src="resources/img/HxL.png" id="h2" style="display:none;">-->
+            <img src="resources/img/cf.png" style="display:none;">
+            <img src="resources/img/vr.png" style="display:none;">
+            <img src="resources/img/op7.png" style="display:none;">
+            <img src="resources/img/vx.png" style="display:none;">
+            <img src="resources/img/HxL.png" style="display:none;">
         </div>
         <br/>
+        <div id="containerText" class="container-fluid mx-2 d-flex justify-content-center">
+            <div id="speaker"></div>
+            <div id="typeText">_</div>
+        </div>
         <div id="container" class="container-fluid mx-2 d-flex justify-content-center">
+            
             <div  class="card">
                 <div>Fauna:</div>
                 <button onclick="javascript:vehicleAction('cf', 'move', this)" class="btn btn-outline-primary fs-5 py-0 px-1">

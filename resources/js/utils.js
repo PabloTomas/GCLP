@@ -27,3 +27,23 @@ function toggleButton(button, action=null){
     const y = event.clientY - rect.top
     console.log("x: " + x + " y: " + y)
   }
+
+
+//var i = 0;
+//var txt = 'Lorem ipsum dummy text blabla.';
+var textSpeed = 70;
+
+function typeWriter(txt, i=0, speaker="") {
+  if (i==0) {
+    document.getElementById("typeText").innerHTML="";
+    document.getElementById("speaker").innerHTML=speaker;
+  };
+  if (i < txt.length) {
+    document.getElementById("typeText").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(function(){
+      typeWriter(txt, i);
+    }, textSpeed)
+    //setTimeout(typeWriter, speed);
+  }
+}

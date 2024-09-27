@@ -73,6 +73,7 @@ const runSequence = async function(v){
             toggleButton(v.button, "show")
             break;
           case "speak":
+              typeWriter(action.text, 0, v.name.toUpperCase());
               await speak2(v,action);
               runSequence(v);
               //toggleButton(v.button, "hide")
@@ -225,7 +226,11 @@ function play(){
 }
 
 window.addEventListener('load', function () {
-  loadVehicles(vehicles);
-  this.setTimeout(play,100)
+  
+  loadVehicles(vehicles).then(function(r){
+    play();
+  });
+  //this.setTimeout(play,500)
   //play();
 })
+  
