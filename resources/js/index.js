@@ -41,7 +41,7 @@ async function vehicleAction(name, action, button){
 }
 
 const runSequence = async function(v){
-    try{
+    //try{
       toggleButton(v.button, "hide");
       v.currentAction++;
       if (v.currentAction+1  > v.actions.length)
@@ -81,11 +81,11 @@ const runSequence = async function(v){
         
         //v.currentAction++;
       //}
-        
+  /*      
     }    
     catch(e){
       console.log("Error: "+e)
-    }
+    }*/
 }
 
 
@@ -226,7 +226,7 @@ function play(){
 }
 
 window.addEventListener('load', function () {
-  
+  loadVoices();
   loadVehicles(vehicles).then(function(r){
     play();
   });

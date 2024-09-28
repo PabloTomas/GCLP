@@ -1,19 +1,37 @@
-async function speak2(v, action){
-    const voices = synth.getVoices();
+var voices="";
+function loadVoices() {
+  // Fetch the available voices.
+  console.log("loading voices...")
+	voices = speechSynthesis.getVoices();
+}
+
+window.speechSynthesis.onvoiceschanged = function(e) {
+  loadVoices();
+};
+
+function speak2(v, action){
+    //const voices = synth.getVoices();
+    if (voices==""){
+      console.log("No voices found on device");
+    }
+
     const utterThis = new SpeechSynthesisUtterance(action.speak);
-    
+       
     if (v.voice==null){
-      const voices_ES = voices.filter(voice=>{return voice.lang.includes("es-ES") })
+      let voices_ES = voices.filter(voice=>{return voice.lang.includes("es-ES") })
+      if (voices_ES.length==0){
+        console.log("No voices from Spain found");
+        voices_ES = voices.filter(voice=>{return voice.lang.includes("es") })
+      }
+      if (voices_ES.length==0){
+        console.log("No spanish voices found");
+        voices_ES = voices;
+      }
       v.voice = voices_ES[Math.floor(Math.random()*voices_ES.length)];
 
-      /*
-      for (let i = 0; i < voices.length; i++) {
-        if (voices[i].name.includes("Pablo")) {
-          v.voice = voices[i];
-        }
-      }*/
-
+      console.log("selected voice: " + v.voice.name);
     }
+    
     utterThis.voice = v.voice;
     utterThis.lang="es-ES";
     console.debug("voice:"+utterThis.voice.name);
@@ -27,22 +45,5 @@ async function speak2(v, action){
     //runSequence(v);
   }
   
-  function speak(vehicle){
-    t_id=vehicle.segments[vehicle.currentSegment].stop;
-    if (t_id==null) t_id=0
-    text = vehicle.text[t_id];
-    console.log(vehicle.currentSegment + " - " + text)
-    const utterThis = new SpeechSynthesisUtterance(text);
-    for (let i = 0; i < voices.length; i++) {
-      if (voices[i].name.includes("Pablo")) {
-        utterThis.voice = voices[i];
-      }
-    }
-    utterThis.lang="es-ES";
-    console.debug(utterThis.voice);
-    
-    utterThis.pitch = 1;
-    utterThis.rate = 1;
-    synth.speak(utterThis);
-  }
+
   
