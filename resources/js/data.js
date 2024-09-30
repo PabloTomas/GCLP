@@ -36,7 +36,7 @@ export async function getVehicles(vehicles) {
             vehicles.push(vehicle);
     })
     loadVehiclesToDOM(vehicles);
-   // console.log("vehicles:"+vehicleList);
+  
     return vehicleList;
 }
 
