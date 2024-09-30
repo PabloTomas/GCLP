@@ -1,4 +1,4 @@
-class Vehicle {
+export class Vehicle {
 
     constructor(name, picture,w,h,segments, text=null){
         this.name=name;
@@ -9,12 +9,8 @@ class Vehicle {
         if (this.finaly==null){
             this.finaly=this.y;
         }
-        //this.currentSegment=0;
-        //this.segments=segments;
         this.moving=false;
         this.text=text;
-        //this.currentSegmentFlip=1;
-        //this.currentSegmentRotation=0;
         this.actions=[];
     }
     actions;
@@ -30,13 +26,7 @@ class Vehicle {
     finaly;
     moving;
     button;
-/*
-    currentSegment;
-    segments;
 
-    currentSegmentRotation;
-    currentSegmentRotationId;
-    */
     currentSegmentFlip;
     currentSegmentFlipId;
     
@@ -90,10 +80,10 @@ class Vehicle {
         }
         return this.currentSegmentRotation;
     }
-        ç*/
+        */
 }
 
-class Action{
+export class Action{
     type;
     speak;
     text;
@@ -101,30 +91,3 @@ class Action{
     y;
     time;
 }
-/*class Segment{
-    constructor(x,y,stop=null){
-        this.x=x;
-        this.y=y;
-        this.stop=stop;
-    }
-    x;
-    y;
-}*/
-/*
-class Point {
-    constructor(x,y){
-        this.x=x;
-        this.y=y;
-    }
-    x;
-    y;
-}*/
-/*
-class Path {
-    finalx;
-    finaly;
-    speed;
-    text;
-    speech;
-
-}*/

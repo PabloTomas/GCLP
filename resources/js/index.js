@@ -1,20 +1,20 @@
+import { Vehicle, Action} from "./vehicle.js"
+import { getVehicles } from "./data.js";
+import { loadVoices, speak } from "./speak.js";
+import * as utils from "./utils.js"
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-const canvasWidth = canvas.width;
-const canvasHeight = canvas.height;
 const synth = window.speechSynthesis;
 
 const speed = 2;
 let imagesCanvas = {};
 
-var cfx=40;
-var cfy=155;
-
-const vw=70;
-const vh=45;
 let vehicles = new Array();
 
-async function vehicleAction(name, action, button){
+window.vehicleAction = vehicleAction;
+window.synth = synth;
+
+export async function vehicleAction(name, action, button){
   //console.log(button);
   toggleButton(button, "hide");
  // $("cf").prop("disabled",true);
@@ -74,18 +74,10 @@ const runSequence = async function(v){
             break;
           case "speak":
               typeWriter(action.text, 0, v.name.toUpperCase());
-              await speak2(v,action);
+              await speak(v,action);
               runSequence(v);
-              //toggleButton(v.button, "hide")
         }
-        
-        //v.currentAction++;
-      //}
-  /*      
-    }    
-    catch(e){
-      console.log("Error: "+e)
-    }*/
+
 }
 
 
@@ -217,7 +209,6 @@ function drawCanvas() {
 
 function play(){
   addBackground();
-  console.log(vehicles);
   vehicles.forEach(addCar);
   const canvas = document.querySelector('canvas')
     canvas.addEventListener('mousedown', function(e) {
@@ -227,10 +218,8 @@ function play(){
 
 window.addEventListener('load', function () {
   loadVoices();
-  loadVehicles(vehicles).then(function(r){
-    play();
-  });
-  //this.setTimeout(play,500)
-  //play();
+  getVehicles(vehicles);
+  this.setTimeout(play,500)
+
 })
   

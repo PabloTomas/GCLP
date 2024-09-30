@@ -1,7 +1,7 @@
 var voices="";
-function loadVoices() {
+export function loadVoices() {
   // Fetch the available voices.
-  console.log("loading voices...")
+  //console.log("loading voices...")
 	voices = speechSynthesis.getVoices();
 }
 
@@ -9,7 +9,7 @@ window.speechSynthesis.onvoiceschanged = function(e) {
   loadVoices();
 };
 
-function speak2(v, action){
+export function speak(v, action){
     //const voices = synth.getVoices();
     if (voices==""){
       console.log("No voices found on device");
@@ -29,7 +29,7 @@ function speak2(v, action){
       }
       v.voice = voices_ES[Math.floor(Math.random()*voices_ES.length)];
 
-      console.log("selected voice: " + v.voice.name);
+      //console.log("selected voice: " + v.voice.name);
     }
     
     utterThis.voice = v.voice;
