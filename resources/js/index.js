@@ -219,7 +219,7 @@ function play(){
 window.addEventListener('load', function () {
   loadVoices();
   getVehicles(vehicles);
-  this.setTimeout(play,500)
+  this.setTimeout(play,1500)
 
 })
   
