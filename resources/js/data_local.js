@@ -18,7 +18,7 @@ function UrlExists(url) {
 function getJsonFiles(){
     let i=1;
     let exists=true;
-    let file = "./resource/data/v#.json";
+    let file = "/GCLP/resource/data/v#.json";
     let files = new Array();
     while (exists){
         let f = file.replace("#",i);
