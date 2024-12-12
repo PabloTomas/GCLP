@@ -1,0 +1,119 @@
+    {
+        "name": "v4",
+        "picture": "vx.png",
+        "h": 25,
+        "w": 135,
+        "x": 495,
+        "y": 520,
+        "actions": [
+            {
+                "speak": "Torre de Víctor 4, permiso para ocupar romeo 8 y romeo 9 para revisión de pista",
+                "text": "Torre de V4, permiso para ocupar R8 y R9 para revisión de pista",
+                "type": "speak"
+            },
+            {
+                "type": "wait"
+            },
+            {
+                "speak": "Recibido, ocupando romeo 8 y 9",
+                "text": "Recibido, ocupando R8 y R9",
+                "type": "speak"
+            },
+            {
+                "type": "move",
+                "x": 276,
+                "y": 520
+            },
+            {
+                "type": "move",
+                "x": 222,
+                "y": 491
+            },
+            {
+                "speak": "Víctor 4, manteniendo corto pista cero tres izquierda en romeo 9 romeo",
+                "text": "V4, manteniendo corto pista 03L en R9R",
+                "type": "speak"
+            },
+            {
+                "type": "wait"
+            },
+            {
+                "speak": "Víctor 4, ocupando pista cero tres izquierda, notificaré libre y operativa",
+                "text": "V4, ocupando pista 03L, notificaré libre y operativa",
+                "type": "speak"
+            },
+            {
+                "type": "move",
+                "x": 167,
+                "y": 430
+            },
+            {
+                "type": "move",
+                "x": 609,
+                "y": 430
+            },
+            {
+                "type": "move",
+                "x": 659,
+                "y": 380
+            },
+            {
+                "type": "move",
+                "x": 539,
+                "y": 480
+            },
+            {
+                "type": "move",
+                "x": 609,
+                "y": 430
+            },
+            {
+                "type": "move",
+                "x": 901,
+                "y": 430
+            },
+            {
+                "type": "move",
+                "x": 1022,
+                "y": 501
+            },
+            {
+                "type": "move",
+                "x": 954,
+                "y": 477
+            },
+            {
+                "type": "move",
+                "x": 907,
+                "y": 500
+            },
+            {
+                "type": "move",
+                "x": 1028,
+                "y": 430
+            },
+            {
+                "type": "move",
+                "x": 1684,
+                "y": 430
+            },
+            {
+                "type": "move",
+                "x": 1671,
+                "y": 478
+            },
+            {
+                "type": "move",
+                "x": 1570,
+                "y": 529
+            },
+            {
+                "speak": "Torre de víctor 4, pista cero tres izquierda libre y operativa",
+                "text": "Torre de V4, pista 03L libre y operativa",
+                "type": "speak"
+            },
+            {
+                "type": "wait"
+            }
+        ]
+    }

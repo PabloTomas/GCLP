@@ -1,0 +1,36 @@
+{
+    "name": "v3",
+    "picture": "vr.png",
+    "h": 50,
+    "w": 80,
+    "x": 98,
+    "y": 353,
+    "actions": [
+        {
+            "speak": "Torre de victor 3, permiso para cruzar sierra 7",
+            "text": "Torre de V3, permiso para cruzar S7",
+            "type": "speak"
+        },
+        {
+            "type": "wait"
+        },
+        {
+            "speak": "Cruzando, notificare libre",
+            "text": "Cruzando, notificare libre",
+            "type": "speak"
+        },
+        {
+            "type": "move",
+            "x": 400,
+            "y": 353
+        },
+        {
+            "speak": "sierra 7 libre de victor 3",
+            "text": "S7 libre de V3",
+            "type": "speak"
+        },
+        {
+            "type": "wait"
+        }
+    ]
+}

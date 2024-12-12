@@ -1,0 +1,64 @@
+{
+    "name": "Fauna",
+    "picture": "cf.png",
+    "h": 50,
+    "w": 80,
+    "x": 98,
+    "y": 283,
+    "actions": [
+        {
+            "speak": "Torre de control de fauna, permiso para cruzar punto de espera pista dos uno izquierda, puerta quilo y sierra 8",
+            "text": "Torre de control de fauna, permiso para cruzar punto de espera pista 21L, puerta K y S8",
+            "type": "speak"
+        },
+        {
+            "type": "wait"
+        },
+        {
+            "speak": "Cruzando, notificaré libre",
+            "text": "Cruzando, notificaré libre",
+            "type": "speak"
+        },
+        {
+            "type": "move",
+            "x": 950,
+            "y": 283
+        },
+        {
+            "speak": "Torre de control de fauna, punto de espera pista dos uno izquierda puerta kilo y sierra ocho libre",
+            "text": "Torre de control de fauna, punto de espera pista 21L puerta K y S8 libre",
+            "type": "speak"
+        },
+        {
+            "type": "move",
+            "x": 1640,
+            "y": 283
+        },
+        {
+            "speak": "Torre de control de fauna, permiso para cruzar punto de espera pista cero tres derecha",
+            "text": "Torre de control de fauna, permiso para cruzar punto de espera pista 03R",
+            "type": "speak"
+        },
+        {
+            "type": "wait"
+        },
+        {
+            "speak": "Cruzando punto de espera pista cero tres derecha, notificaré libre",
+            "text": "Cruzando punto de espera pista 03R, notificaré libre",
+            "type": "speak"
+        },
+        {
+            "type": "move",
+            "x": 1740,
+            "y": 283
+        },
+        {
+            "speak": "punto de espera pista cero tres derecha libre, terminado por hoy, buen dia y buen servicio",
+            "text": "punto de espera pista 03R libre, terminado por hoy, buen día y buen servicio",
+            "type": "speak"
+        },
+        {
+            "type": "wait"
+        }
+    ]
+}

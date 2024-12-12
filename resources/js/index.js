@@ -1,5 +1,5 @@
 import { Vehicle, Action} from "./vehicle.js"
-import { getVehicles } from "./data.js";
+import { getVehicles } from "./data_local.js";
 import { loadVoices, speak } from "./speak.js";
 import * as utils from "./utils.js"
 const canvas = document.getElementById('canvas');
@@ -216,10 +216,26 @@ function play(){
   })
 }
 
+function loadCard(vehicle){
+var div = `
+<div  class="card">
+<div>{vehicle.name}:</div>
+<button onclick="javascript:vehicleAction('{vehicle.name}', 'move', this)" class="btn btn-outline-primary fs-5 py-0 px-1">
+    <i class="bi bi-play"></i>
+</button>
+<div class="spinner-grow spinner-grow-sm text-primary d-none" role="status">
+    <span class="visually-hidden">Loading...</span>
+</div>
+</div>
+`
+$("#container").innerHTML += div.replace("{vehicle.name}",vehicle.name)
+
+}
+
+
 window.addEventListener('load', function () {
   loadVoices();
-  getVehicles(vehicles);
-  this.setTimeout(play,1500)
-
+  getVehicles(vehicles)
+  this.setTimeout(play,500)
 })
   

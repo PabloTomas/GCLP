@@ -1,0 +1,36 @@
+{
+    "name": "op7",
+    "picture": "op7.png",
+    "h": 50,
+    "w": 80,
+    "x": 1785,
+    "y": 360,
+    "actions": [
+        {
+            "speak": "Torre de oscar papa siete, permiso para cruzar zulu siete y zulu seis",
+            "text": "Torre de OP7, permiso para cruzar Z7 y Z6",
+            "type": "speak"
+        },
+        {
+            "type": "wait"
+        },
+        {
+            "speak": "Cruzando, notificaré libre",
+            "text": "Cruzando, notificaré libre",
+            "type": "speak"
+        },
+        {
+            "type": "move",
+            "x": 1600,
+            "y": 360
+        },
+        {
+            "speak": "zulu siete y zulu seis libre de oscar papa siete",
+            "text": "Z7 y Z6 libre de OP7",
+            "type": "speak"
+        },
+        {
+            "type": "wait"
+        }
+    ]
+}

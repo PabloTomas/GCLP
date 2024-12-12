@@ -1,0 +1,83 @@
+   
+    {
+        "name": "Barrera",
+        "picture": "vx.png",
+        "currentSegmentFlip":1,
+        "h": 25,
+        "w": 135,
+        "x": 480,
+        "y": 260,
+        "actions": [
+            {
+                "speak": "Torre de Barrera, permiso para cruzar sierra 8",
+                "text": "Torre de Barrera, permiso para cruzar S8",
+                "type": "speak"
+            },
+            {
+                "type": "wait"
+            },
+            {
+                "speak": "Barrera, cruzando sierra 8 notificaré libre",
+                "text": "Barrera, cruzando S8 notificaré libre",
+                "type": "speak"
+            },
+            {
+                "type": "move",
+                "x": 750,
+                "y": 260
+            },
+            {
+                "type": "move",
+                "x": 830,
+                "y": 295
+            },
+            {
+                "type": "move",
+                "x": 1400,
+                "y": 295
+            },
+            {
+                "speak": "Torre de Barrera, sierra 8 libre y solicito levantamiento de cable retráctil",
+                "text": "Torre de Barrera, S8 libre y  solicito levantamiento de cable retráctil",
+                "type": "speak"
+            },
+            {
+                "type": "wait"
+            },
+            {
+                "speak": "Torre de Barrera, Cable arriba, puede bajarlo",
+                "text": "Torre de Barrera, Cable arriba, puede bajarlo",
+                "type": "speak"
+            },
+            {
+                "time": 2,
+                "type": "wait"
+            },
+            {
+                "speak": "Torre de Barrera, le confirmo cable abajo y le solicito cruzar sierra 8",
+                "text": "Torre de Barrera, le confirmo cable abajo y le solicito cruzar S8",
+                "type": "speak"
+            },
+            {
+                "type": "wait"
+            },
+            {
+                "speak": "Barrera, cruzando sierra 8 notificaré libre",
+                "text": "Barrera, cruzando S8 notificaré libre",
+                "type": "speak"
+            },
+            {
+                "type": "move",
+                "x": 556,
+                "y": 295
+            },
+            {
+                "speak": "Torre de Barrera, sierra 8 libre, terminado, muchas gracias",
+                "text": "Torre de Barrera, S8 libre, terminado, muchas gracias",
+                "type": "speak"
+            },
+            {
+                "type": "wait"
+            }
+        ]
+    }
