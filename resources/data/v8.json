@@ -8,8 +8,8 @@
         "y": 540,
         "actions": [
             {
-                "aspeak": "Torre de Limpieza exterior, permiso para cruzar la rodadura exterior a la altura del papa cuatro y ocupar el parterre entre sierra 3 y sierra 2",
-                "atext": "Torre de Limpieza exterior, permiso para cruzar la rodadura exterior a la altura del P04 y ocupar el parterre entre S3 y S2",
+                "speak": "Torre de Limpieza exterior, permiso para cruzar la rodadura exterior a la altura del papa cuatro y ocupar el parterre entre sierra 3 y sierra 2",
+                "text": "Torre de Limpieza exterior, permiso para cruzar la rodadura exterior a la altura del P04 y ocupar el parterre entre S3 y S2",
                 "type": "speak"
             },
             {
