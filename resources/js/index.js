@@ -39,7 +39,7 @@ export async function vehicleAction(name, action, button){
   }
   toggleButton(button, "show");
 }
-
+const delay = ms => new Promise(res => setTimeout(res, ms));
 const runSequence = async function(v){
     //try{
       toggleButton(v.button, "hide");

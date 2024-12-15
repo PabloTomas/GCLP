@@ -1,4 +1,4 @@
-const delay = ms => new Promise(res => setTimeout(res, ms));
+
 
 window.toggleButton = toggleButton;
 window.getCursorPosition = getCursorPosition;

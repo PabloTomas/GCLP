@@ -2,15 +2,16 @@
     {
         "name": "Limpieza",
         "picture": "cf.png",
-        "currentSegmentFlip":1,
-        "h": 25,
-        "w": 135,
-        "x": 480,
-        "y": 260,
+        "h": 50,
+        "w": 80,
+        "x": 560,
+        "y": 540,
         "actions": [
             {
-                "speak": "Torre de Limpieza exterior, permiso para cruzar la rodadura exterior a la altura del papa cuatro",
-                "text": "Torre de Limpieza exterior, permiso para cruzar la rodadura exterior a la altura del P04",
+                "speak":"a",
+                "text":"-",
+                "aspeak": "Torre de Limpieza exterior, permiso para cruzar la rodadura exterior a la altura del papa cuatro y ocupar el parterre entre sierra 3 y sierra 2",
+                "atext": "Torre de Limpieza exterior, permiso para cruzar la rodadura exterior a la altura del P04 y ocupar el parterre entre S3 y S2",
                 "type": "speak"
             },
             {
@@ -23,30 +24,35 @@
             },
             {
                 "type": "move",
-                "x": 750,
-                "y": 260
+                "x": 560,
+                "y": 480
             },
             {
                 "type": "move",
-                "x": 830,
-                "y": 295
+                "x": 825,
+                "y": 480
             },
             {
-                "type": "move",
-                "x": 1400,
-                "y": 295
-            },
-            {
-                "speak": "Torre de Barrera, sierra 8 libre y solicito levantamiento de cable retráctil",
-                "text": "Torre de Barrera, S8 libre y  solicito levantamiento de cable retráctil",
+                "speak": "Torre de Limpieza exterior, permiso para cruzar sierra 2",
+                "text": "Torre de Limpieza exterior, permiso para cruzar S2",
                 "type": "speak"
             },
             {
                 "type": "wait"
             },
             {
-                "speak": "Torre de Barrera, Cable arriba, puede bajarlo",
-                "text": "Torre de Barrera, Cable arriba, puede bajarlo",
+                "speak": "cruzando notificaré libre",
+                "text": "cruzando notificaré libre",
+                "type": "speak"
+            },
+            {
+                "type": "move",
+                "x": 950,
+                "y": 480
+            },
+            {
+                "speak": "sierra 2 libre de limpieza exterior",
+                "text": "S2 libre de limpieza exterior",
                 "type": "speak"
             },
             {
@@ -54,26 +60,54 @@
                 "type": "wait"
             },
             {
-                "speak": "Torre de Barrera, le confirmo cable abajo y le solicito cruzar sierra 8",
-                "text": "Torre de Barrera, le confirmo cable abajo y le solicito cruzar S8",
+                "speak": "Torre de Limpieza exterior, permiso para cruzar sierra 1",
+                "text": "Torre de Limpieza exterior, permiso para cruzar S1",
                 "type": "speak"
             },
             {
                 "type": "wait"
             },
             {
-                "speak": "Barrera, cruzando sierra 8 notificaré libre",
-                "text": "Barrera, cruzando S8 notificaré libre",
+                "speak": "cruzando notificaré libre",
+                "text": "cruzando notificaré libre",
                 "type": "speak"
             },
             {
                 "type": "move",
-                "x": 556,
-                "y": 295
+                "x": 1020,
+                "y": 480
             },
             {
-                "speak": "Torre de Barrera, sierra 8 libre, terminado, muchas gracias",
-                "text": "Torre de Barrera, S8 libre, terminado, muchas gracias",
+                "speak": "sierra 1 libre de limpieza exterior",
+                "text": "S1 libre de limpieza exterior",
+                "type": "speak"
+            },
+            {
+                "type": "move",
+                "x": 1300,
+                "y": 480
+            },
+            {
+                "speak": "Torre de Limpieza exterior, permiso para cruzar rodadura exterior a la altura del lima 4 para abandonar el parterre",
+                "text": "Torre de Limpieza exterior, permiso para cruzar rodadura exterior a la altura del L4 para abandonar el parterre",
+                "type": "speak"
+            },
+            {
+                "type": "wait"
+            },
+            {
+                "speak": "cruzando notificaré libre",
+                "text": "cruzando notificaré libre",
+                "type": "speak"
+            },
+            {
+                "type": "move",
+                "x": 1300,
+                "y": 540
+            },
+            {
+                "speak": "rodadura exterior libre de limpieza exterior y trabajos terminados por hoy",
+                "text": "rodadura exterior libre de limpieza exterior y trabajos terminados por hoy",
                 "type": "speak"
             },
             {

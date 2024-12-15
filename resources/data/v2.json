@@ -1,10 +1,10 @@
 {
-    "name": "H2",
+    "name": "H2_R9L",
     "picture": "HxL.png",
     "h": 30,
     "w": 100,
     "x": 1480,
-    "y": 530,
+    "y": 560,
     "actions": [
         {
             "speak": "Torre de Hotel 2, permiso para rodar desde parque de bomberos hasta romeo 9 lima",
@@ -18,6 +18,11 @@
             "speak": "Hotel 2 Ocupando rodadura exterior",
             "text": "H2 Ocupando rodadura exterior",
             "type": "speak"
+        },
+        {
+            "type": "move",
+            "x": 1480,
+            "y": 530
         },
         {
             "type": "move",

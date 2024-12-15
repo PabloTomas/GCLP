@@ -1,6 +1,6 @@
 {
 
-    "name": "V1",
+    "name": "V1_03R",
     "picture": "vx.png",
     "h": 25,
     "w": 135,
@@ -9,7 +9,7 @@
     "currentSegmentFlip":1,
     "actions": [
         {
-            "speak": "Torre de victor 1, permiso para revisar pista cero tres derecha",
+            "speak": "Torre de victor uno, permiso para revisar pista cero tres derecha",
             "text": "Torre de V1, permiso para revisar pista 03R",
             "type": "speak"
         },
@@ -17,7 +17,7 @@
             "type": "wait"
         },
         {
-            "speak": "Victor 1 ocupando pista ",
+            "speak": "Victor uno ocupando pista ",
             "text": "V1 ocupando pista ",
             "type": "speak"
         },
@@ -52,7 +52,7 @@
             "y": 332
         },
         {
-            "speak": "victor 1, alcanzando sierra 6",
+            "speak": "victor uno, alcanzando sierra 6",
             "text": "V1, alcanzando S6",
             "type": "speak"
         },
@@ -65,6 +65,11 @@
             "type": "move",
             "x": 1020,
             "y": 372
+        },
+        {
+            "type": "move",
+            "x": 820,
+            "y": 292
         },
         {
             "type": "move",
@@ -82,7 +87,7 @@
             "y": 365
         },
         {
-            "speak": "Victor 1 pista cero tres derecha libre y operativa",
+            "speak": "Victor uno pista cero tres derecha libre y operativa",
             "text": "V1 pista 03R libre y operativa",
             "type": "speak"
         },
